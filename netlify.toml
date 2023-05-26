@@ -1,4 +1,7 @@
 [[redirects]]
 from = "/*"
 to = "https://webcache.googleusercontent.com/search?q=cache::splat"
-status = 200
+
+[[redirects]]
+from = "/?q=*"
+to = "https://webcache.googleusercontent.com/search?q=cache::splat"
