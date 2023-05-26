@@ -3,5 +3,5 @@ from = "/*"
 to = "https://webcache.googleusercontent.com/search?q=cache::splat"
 
 [[redirects]]
-from = "/?q=*"
+from = "/search/?q=*"
 to = "https://webcache.googleusercontent.com/search?q=cache::splat"
