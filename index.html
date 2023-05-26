@@ -11,7 +11,7 @@
     <h1>GCache</h1>
     <p>Search the Google Web Cache</p>
     <div id="form-controls" class="input-group mb-3 d-none">
-        <input type="text" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="search-button" id="url" name="url">
+        <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="search-button" id="url" name="url" pattern="https?://.*" required>
         <button class="btn btn-primary" type="button" id="search-button" onclick="redirect()">Search</button>
     </div>
     <noscript>
