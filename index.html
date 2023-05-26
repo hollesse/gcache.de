@@ -10,7 +10,7 @@
 <main class="container text-center">
     <h1>GCache</h1>
     <p>Search the Google Web Cache</p>
-    <form id="form-controls" class="d-none" onsubmit="return validierenUndWeiterleiten(event)">
+    <form id="form-controls" class="d-none" onsubmit="validierenUndWeiterleiten(event)">
         <div class="input-group mb-3">
             <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="search-button" id="url" name="url" pattern="https?://.*" required>
             <button class="btn btn-primary" type="submit" id="search-button">Search</button>
@@ -24,13 +24,13 @@
 
 <script>
     function validierenUndWeiterleiten(event) {
+        event.preventDefault();
         var input = document.getElementById('url').value;
 
         // Validierung der URL mit JavaScript
         var urlRegex = /^https?:\/\/.*$/;
         if (!urlRegex.test(input)) {
             alert("Ungültige URL!");
-            event.preventDefault();
             return false;
         }
 
